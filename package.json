@@ -1,0 +1,32 @@
+{
+  "name": "full_algo",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "bin": {
+    "fizzbuzz": "./dist/scripts/cli.js"
+  },
+  "scripts": {
+    "test": "cucumber-js tests/",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "build": "tsc",
+    "fizzbuzz": "node dist/scripts/cli.js"
+  },
+  "keywords": ["fizzbuzz", "cucumber", "typescript"],
+  "author": "Antoine GARNIER",
+  "description": "FizzBuzz implementation with Cucumber and TypeScript",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
